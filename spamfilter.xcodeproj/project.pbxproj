@@ -24,8 +24,8 @@
 		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
 		76018AB312C3DF6800FC4AF1 /* CBPurpleAccount+AuthBlocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPurpleAccount+AuthBlocker.h"; sourceTree = "<group>"; };
 		76018AB412C3DF6800FC4AF1 /* CBPurpleAccount+AuthBlocker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPurpleAccount+AuthBlocker.m"; sourceTree = "<group>"; };
-		7605D78713CEED3500C0D516 /* Adium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Adium.framework; path = ../adium3/build/Release/Adium.framework; sourceTree = SOURCE_ROOT; };
-		7605D78813CEED3500C0D516 /* AdiumLibpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdiumLibpurple.framework; path = ../adium3/build/Release/AdiumLibpurple.framework; sourceTree = SOURCE_ROOT; };
+		7605D78713CEED3500C0D516 /* Adium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Adium.framework; path = Frameworks/Adium.framework; sourceTree = SOURCE_ROOT; };
+		7605D78813CEED3500C0D516 /* AdiumLibpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdiumLibpurple.framework; path = Frameworks/AdiumLibpurple.framework; sourceTree = SOURCE_ROOT; };
 		7605D91C13CEEEF700C0D516 /* libglib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libglib.framework; path = ../adium3/Frameworks/libglib.framework; sourceTree = SOURCE_ROOT; };
 		761BD63412206D42004B9A39 /* AISFPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISFPlugin.h; sourceTree = "<group>"; };
 		761BD63512206D42004B9A39 /* AISFPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISFPlugin.m; sourceTree = "<group>"; };
@@ -207,6 +207,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../adium3/build/Release\"",
 					"\"$(SRCROOT)/../adium3/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -238,6 +239,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../adium3/build/Release\"",
 					"\"$(SRCROOT)/../adium3/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
