@@ -30,7 +30,7 @@
 		761BD98F12208C23004B9A39 /* AISFPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISFPreferences.m; sourceTree = "<group>"; };
 		761BDA421220981D004B9A39 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/SFPreferences.xib; sourceTree = "<group>"; };
 		76F8BB3B122482460020A73A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		8D576316048677EA00EA77CD /* spamfilter.AdiumPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = spamfilter.AdiumPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D576316048677EA00EA77CD /* userfilter.AdiumPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = userfilter.AdiumPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFBD5BED1D6BD813001341EC /* Adium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Adium.framework; sourceTree = "<group>"; };
 		DFBD5BEF1D6BD83E001341EC /* AdiumLibpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdiumLibpurple.framework; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		19C28FB6FE9D52B211CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D576316048677EA00EA77CD /* spamfilter.AdiumPlugin */,
+				8D576316048677EA00EA77CD /* userfilter.AdiumPlugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,9 +110,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D57630D048677EA00EA77CD /* spamfilter */ = {
+		8D57630D048677EA00EA77CD /* userfilter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "spamfilter" */;
+			buildConfigurationList = 1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "userfilter" */;
 			buildPhases = (
 				8D57630F048677EA00EA77CD /* Resources */,
 				8D576311048677EA00EA77CD /* Sources */,
@@ -122,10 +122,10 @@
 			);
 			dependencies = (
 			);
-			name = spamfilter;
+			name = userfilter;
 			productInstallPath = "$(HOME)/Library/Bundles";
 			productName = spamfilter;
-			productReference = 8D576316048677EA00EA77CD /* spamfilter.AdiumPlugin */;
+			productReference = 8D576316048677EA00EA77CD /* userfilter.AdiumPlugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -136,7 +136,7 @@
 			attributes = {
 				LastUpgradeCheck = 0730;
 			};
-			buildConfigurationList = 1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "spamfilter" */;
+			buildConfigurationList = 1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "userfilter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -147,7 +147,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D57630D048677EA00EA77CD /* spamfilter */,
+				8D57630D048677EA00EA77CD /* userfilter */,
 			);
 		};
 /* End PBXProject section */
@@ -220,7 +220,7 @@
 					"-undefined",
 					dynamic_lookup,
 				);
-				PRODUCT_NAME = spamfilter;
+				PRODUCT_NAME = userfilter;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = AdiumPlugin;
 			};
@@ -250,7 +250,7 @@
 					"-undefined",
 					dynamic_lookup,
 				);
-				PRODUCT_NAME = spamfilter;
+				PRODUCT_NAME = userfilter;
 				SDKROOT = macosx;
 				SKIP_INSTALL = NO;
 				VALID_ARCHS = "i386 x86_64";
@@ -288,7 +288,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "spamfilter" */ = {
+		1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "userfilter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB911B08733D790010E9CD /* Debug */,
@@ -297,7 +297,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "spamfilter" */ = {
+		1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "userfilter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB911F08733D790010E9CD /* Debug */,
