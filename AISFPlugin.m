@@ -75,12 +75,12 @@
 			@try {
 				if ([regex evaluateWithObject:contentObject.source.displayName]) {
 					hidden = YES;
-					AILogWithSignature(@"Hiding %@ as it matches regex %@", contentObject, message);
+					AILogWithSignature(@"UserFilter: Hiding %@ as it matches regex %@", contentObject, message);
 					break;
 				}
 			}
 			@catch (NSException *e) {
-				AILog(@"Regex %@ seems to have failed: %@", message, e);
+				AILog(@"UserFilter: Regex %@ seems to have failed: %@", message, e);
 				// show the error after a delay, so the incoming message doesn't have to wait
 				[self performSelector:@selector(error:) withObject:[NSDictionary dictionaryWithObjectsAndKeys:message, @"Message", e, @"Exception", nil] afterDelay:0.1];
 			}
@@ -88,7 +88,7 @@
 		} else if ([contentObject.source.displayName rangeOfString:[message valueForKey:KEY_SF_PHRASE]
 												options:([[message valueForKey:KEY_SF_CASE_SENSITIVE] boolValue] ? 0 : NSCaseInsensitiveSearch)].location != NSNotFound) {
 			hidden = YES;
-			AILogWithSignature(@"Hiding %@ as it matches %@", contentObject, message);
+			AILogWithSignature(@"UserFilter: Hiding %@ as it matches %@", contentObject, message);
 			break;
 		}
 	}
