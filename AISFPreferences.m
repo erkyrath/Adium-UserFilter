@@ -40,7 +40,7 @@ static AISFPreferences	*sharedInstance = nil;
 
 - (NSString *)label
 {
-    return @"SpamFilter-plugin";
+    return @"UserFilter-plugin";
 }
 
 - (NSString *)nibName
