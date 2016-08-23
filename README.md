@@ -15,6 +15,8 @@ I made this for one reason: to block Slackbot messages when connected to [Slack]
 
 [Slack]: http://slack.com/
 
+To block Slackbot, install this plugin to `~/Library/Application Support/Adium 2.0/PlugIns`; launch Adium and go to Preferences/Advanced/UserFilter-plugin; create an entry with the string `/slackbot` (with the slash).
+
 ## Compiling
 
 Compiling Adium plugins requires some fiddling around.
