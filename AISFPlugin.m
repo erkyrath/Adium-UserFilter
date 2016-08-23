@@ -125,7 +125,7 @@
 
 - (NSString *)pluginAuthor
 {
-	return @"Thijs Alkemade <thijsalkemade@gmail.com>";
+	return @"Andrew Plotkin <erkyrath@eblong.com>";
 }
 
 - (NSString *)pluginVersion
@@ -135,7 +135,7 @@
 
 - (NSString *)pluginDescription
 {
-	return @"Allows you to specify filters on incoming messages.";
+	return @"Allows you to specify filters on usernames.";
 }
 
 @end
