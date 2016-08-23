@@ -15,7 +15,6 @@
 		8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49A704867FD3000E48DA /* InfoPlist.strings */; };
 		DFBD5BEE1D6BD813001341EC /* Adium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD5BED1D6BD813001341EC /* Adium.framework */; };
 		DFBD5BF01D6BD83E001341EC /* AdiumLibpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD5BEF1D6BD83E001341EC /* AdiumLibpurple.framework */; };
-		DFBD5BF21D6BD9F7001341EC /* libglib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD5BF11D6BD9F7001341EC /* libglib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFBD5BED1D6BD813001341EC /* Adium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Adium.framework; path = Frameworks/Adium.framework; sourceTree = "<group>"; };
 		DFBD5BEF1D6BD83E001341EC /* AdiumLibpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdiumLibpurple.framework; path = Frameworks/AdiumLibpurple.framework; sourceTree = "<group>"; };
-		DFBD5BF11D6BD9F7001341EC /* libglib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libglib.framework; path = Frameworks/libglib.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +41,6 @@
 				DFBD5BEE1D6BD813001341EC /* Adium.framework in Frameworks */,
 				76F8BB3C122482460020A73A /* Cocoa.framework in Frameworks */,
 				DFBD5BF01D6BD83E001341EC /* AdiumLibpurple.framework in Frameworks */,
-				DFBD5BF21D6BD9F7001341EC /* libglib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +61,6 @@
 		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				DFBD5BF11D6BD9F7001341EC /* libglib.framework */,
 				DFBD5BEF1D6BD83E001341EC /* AdiumLibpurple.framework */,
 				DFBD5BED1D6BD813001341EC /* Adium.framework */,
 				76F8BB3B122482460020A73A /* Cocoa.framework */,
@@ -207,7 +203,7 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				HEADER_SEARCH_PATHS = Frameworks/libglib.framework/Headers;
+				HEADER_SEARCH_PATHS = "Adium-Repo/Frameworks/libglib.framework/Headers";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "\"$(HOME)/Library/Application Support/Adium 2.0/PlugIns/\"";
 				OTHER_LDFLAGS = (
@@ -237,7 +233,7 @@
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = Frameworks/libglib.framework/Headers;
+				HEADER_SEARCH_PATHS = "Adium-Repo/Frameworks/libglib.framework/Headers";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "\"$(HOME)/Library/Application\\ Support/Adium\\ 2.0/PlugIns/\"";
 				OTHER_LDFLAGS = (
