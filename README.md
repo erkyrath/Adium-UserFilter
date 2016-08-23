@@ -3,7 +3,7 @@
 ## A very simple username filter plugin for [Adium][]
 
 - Copyright 2016 by Andrew Plotkin
-- GPL license -- see [License.txt](License.txt)
+- GPLv2 license -- see [License.txt](License.txt)
 - Originally based on the [SpamFilter plugin][spamfilter] by Thijs Alkemade.
 
 [spamfilter]: https://bitbucket.org/xnyhps/adium-spamfilter-plugin
