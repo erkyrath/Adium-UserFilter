@@ -19,7 +19,8 @@
 #import <Adium/AIContentMessage.h>
 
 #import <Adium/AIPreferenceControllerProtocol.h>
-#import </usr/include/objc/objc-class.h>
+//#import </usr/include/objc/objc-class.h>
+#import <objc/objc-class.h>
 
 @class AIMedia;
 
