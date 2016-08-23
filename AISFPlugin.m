@@ -38,18 +38,6 @@
 												 name:Content_WillReceiveContent
 											   object:nil];
 	
-	AILogWithSignature(@"Doing risky stuff: swizzling authorizationRequestWithDict:");
-	
-	Method orig_method = nil, alt_method = nil;
-	SEL orig = @selector(authorizationRequestWithDict:);
-	SEL new = @selector(authorizationRequestWithDict:);
-	orig_method = class_getInstanceMethod([CBPurpleAccount class], @selector(authorizationRequestWithDict:));
-    alt_method = class_getInstanceMethod([CBPurpleAccount class], @selector(_authorizationRequestWithDict:));
-
-    if(class_addMethod([CBPurpleAccount class], orig, method_getImplementation(alt_method), method_getTypeEncoding(alt_method)))
-        class_replaceMethod([CBPurpleAccount class], new, method_getImplementation(orig_method), method_getTypeEncoding(orig_method));
-    else
-		method_exchangeImplementations(orig_method, alt_method);
 	
 	AILogWithSignature(@"Adium spamfilter plugin loaded: %@", [preferences view]);
 }

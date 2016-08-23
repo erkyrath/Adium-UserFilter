@@ -28,7 +28,7 @@
 #define KEY_SF_CASE_SENSITIVE @"Case Sensitive"
 #define KEY_SF_REGEX @"Regular Expression"
 
-#define KEY_SF_SHOULD_BLOCK_AUTH @"Should Ignore Authorization Requests"
+//#define KEY_SF_SHOULD_BLOCK_AUTH @"Should Ignore Authorization Requests"
 
 @class AISFPreferences;
 

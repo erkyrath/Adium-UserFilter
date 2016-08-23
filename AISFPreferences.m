@@ -20,7 +20,7 @@ static AISFPreferences	*sharedInstance = nil;
 
 @implementation AISFPreferences
 
-@synthesize shouldIgnoreAuthorizationRequests;
+//@synthesize shouldIgnoreAuthorizationRequests;
 
 + (AISFPreferences *)sharedInstance
 {	
@@ -55,7 +55,7 @@ static AISFPreferences	*sharedInstance = nil;
 
 - (IBAction)save:(id)sender
 {
-	AILogWithSignature(@"Saving: %@", self.shouldIgnoreAuthorizationRequests);
+	//AILogWithSignature(@"Saving: %@", self.shouldIgnoreAuthorizationRequests);
 	NSMutableArray *blacklistCopy = [[blacklist mutableCopy] autorelease];
 	
 	// Never save a blank term.
@@ -65,9 +65,9 @@ static AISFPreferences	*sharedInstance = nil;
 									   forKey:KEY_SF_FILTERS
 										group:PREF_GROUP_SPAMFILTER];
 	
-	[adium.preferenceController setPreference:self.shouldIgnoreAuthorizationRequests
+	/*[adium.preferenceController setPreference:self.shouldIgnoreAuthorizationRequests
 									   forKey:KEY_SF_SHOULD_BLOCK_AUTH
-										group:PREF_GROUP_SPAMFILTER];
+										group:PREF_GROUP_SPAMFILTER];*/
 	
 	[tableView reloadData];
 }
@@ -144,7 +144,7 @@ static AISFPreferences	*sharedInstance = nil;
 	
 	blacklist = [[NSMutableArray alloc] initWithArray:[adium.preferenceController preferenceForKey:KEY_SF_FILTERS group:PREF_GROUP_SPAMFILTER]];
 	
-	self.shouldIgnoreAuthorizationRequests = [adium.preferenceController preferenceForKey:KEY_SF_SHOULD_BLOCK_AUTH group:PREF_GROUP_SPAMFILTER];
+	/*self.shouldIgnoreAuthorizationRequests = [adium.preferenceController preferenceForKey:KEY_SF_SHOULD_BLOCK_AUTH group:PREF_GROUP_SPAMFILTER];*/
 	
 	[super viewDidLoad];
 }
