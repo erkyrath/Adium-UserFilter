@@ -213,7 +213,7 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				HEADER_SEARCH_PATHS = /Users/thijs/Projects/Checkouts/Adium/adium3/Frameworks/libglib.framework/Headers;
+				HEADER_SEARCH_PATHS = libglib.framework/Headers;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "\"$(HOME)/Library/Application Support/Adium 2.0/PlugIns/\"";
 				OTHER_LDFLAGS = (
@@ -243,7 +243,7 @@
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = /Users/thijs/Projects/Checkouts/Adium/adium3/Frameworks/libglib.framework/Headers;
+				HEADER_SEARCH_PATHS = libglib.framework/Headers;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "\"$(HOME)/Library/Application\\ Support/Adium\\ 2.0/PlugIns/\"";
 				OTHER_LDFLAGS = (
