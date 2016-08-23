@@ -188,7 +188,7 @@ static AISFPreferences	*sharedInstance = nil;
 
 - (void)editObject:(NSDictionary *)inObject
 {
-	currentlyEditing = [inObject retain];
+	currentlyEditing = (NSMutableDictionary *)[inObject retain];
 	
 	[addField setStringValue:[inObject valueForKey:KEY_SF_PHRASE]];
 	[phraseIsCaseSensitive setState:[[inObject valueForKey:KEY_SF_CASE_SENSITIVE] integerValue]];
