@@ -33,7 +33,6 @@
 	NSMutableArray				*blacklist;
 	NSMutableDictionary			*currentlyEditing;
 	
-	//NSNumber					*shouldIgnoreAuthorizationRequests;
 }
 
 + (AISFPreferences *)sharedInstance;
@@ -52,6 +51,5 @@
 
 - (void)editObject:(NSDictionary *)inObject;
 
-//@property (copy) NSNumber *shouldIgnoreAuthorizationRequests;
 
 @end

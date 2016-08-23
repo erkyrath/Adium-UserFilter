@@ -20,8 +20,6 @@ static AISFPreferences	*sharedInstance = nil;
 
 @implementation AISFPreferences
 
-//@synthesize shouldIgnoreAuthorizationRequests;
-
 + (AISFPreferences *)sharedInstance
 {	
 	@synchronized(self) {
@@ -64,10 +62,6 @@ static AISFPreferences	*sharedInstance = nil;
 	[adium.preferenceController setPreference:blacklistCopy
 									   forKey:KEY_SF_FILTERS
 										group:PREF_GROUP_SPAMFILTER];
-	
-	/*[adium.preferenceController setPreference:self.shouldIgnoreAuthorizationRequests
-									   forKey:KEY_SF_SHOULD_BLOCK_AUTH
-										group:PREF_GROUP_SPAMFILTER];*/
 	
 	[tableView reloadData];
 }
@@ -143,8 +137,6 @@ static AISFPreferences	*sharedInstance = nil;
 	[label_explanation setStringValue:@"Messages are hidden when they match one of the following phrases. If case sensitive is enabled, \"sPaM\" will not match \"spam\"."];
 	
 	blacklist = [[NSMutableArray alloc] initWithArray:[adium.preferenceController preferenceForKey:KEY_SF_FILTERS group:PREF_GROUP_SPAMFILTER]];
-	
-	/*self.shouldIgnoreAuthorizationRequests = [adium.preferenceController preferenceForKey:KEY_SF_SHOULD_BLOCK_AUTH group:PREF_GROUP_SPAMFILTER];*/
 	
 	[super viewDidLoad];
 }
