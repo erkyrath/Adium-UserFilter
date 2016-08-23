@@ -199,8 +199,8 @@
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../adium3/build/Release\"",
-					"\"$(SRCROOT)/../adium3/Frameworks\"",
+					"\"$(SRCROOT)/Adium-Repo/build/Release\"",
+					"\"$(SRCROOT)/Adium-Repo/Frameworks\"",
 					"$(PROJECT_DIR)",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -231,8 +231,8 @@
 				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../adium3/build/Release\"",
-					"\"$(SRCROOT)/../adium3/Frameworks\"",
+					"\"$(SRCROOT)/Adium-Repo/build/Release\"",
+					"\"$(SRCROOT)/Adium-Repo/Frameworks\"",
 					"$(PROJECT_DIR)",
 				);
 				GCC_MODEL_TUNING = G5;
