@@ -135,7 +135,7 @@ static AISFPreferences	*sharedInstance = nil;
  */
 - (void)viewDidLoad
 {
-	[label_explanation setStringValue:@"Messages are hidden when they match one of the following phrases. If case sensitive is enabled, \"sPaM\" will not match \"spam\"."];
+	[label_explanation setStringValue:@"Messages are hidden when the sender matches one of the following phrases. If case sensitive is enabled, \"sPaM\" will not match \"spam\"."];
 	
 	blacklist = [[NSMutableArray alloc] initWithArray:[adium.preferenceController preferenceForKey:KEY_SF_FILTERS group:PREF_GROUP_SPAMFILTER]];
 	

@@ -38,7 +38,7 @@
 											   object:nil];
 	
 	
-	AILogWithSignature(@"Adium spamfilter plugin loaded: %@", [preferences view]);
+	AILogWithSignature(@"Adium UserFilter plugin loaded: %@", [preferences view]);
 }
 
 - (void)uninstallPlugin
@@ -101,7 +101,7 @@
 - (void)error:(NSDictionary *)context
 {
 	NSInteger result = NSRunAlertPanel([NSString stringWithFormat:@"Evaluation of regular expression \"%@\" failed.", [[context valueForKey:@"Message"] valueForKey:KEY_SF_PHRASE]],
-									   [NSString stringWithFormat:@"Adium SpamFilter plugin encountered an error when evaluating this regular expression:\n\n%@", [context valueForKey:@"Exception"]],
+									   [NSString stringWithFormat:@"Adium UserFilter plugin encountered an error when evaluating this regular expression:\n\n%@", [context valueForKey:@"Exception"]],
 									   @"OK",
 									   @"Edit expression",
 									   nil);
