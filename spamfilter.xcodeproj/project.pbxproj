@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		76018AB512C3DF6800FC4AF1 /* CBPurpleAccount+AuthBlocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 76018AB412C3DF6800FC4AF1 /* CBPurpleAccount+AuthBlocker.m */; };
-		7605D78913CEED3500C0D516 /* Adium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7605D78713CEED3500C0D516 /* Adium.framework */; };
-		7605D78A13CEED3500C0D516 /* AdiumLibpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7605D78813CEED3500C0D516 /* AdiumLibpurple.framework */; };
-		7605D91D13CEEEF700C0D516 /* libglib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7605D91C13CEEEF700C0D516 /* libglib.framework */; };
 		761BD63612206D42004B9A39 /* AISFPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 761BD63512206D42004B9A39 /* AISFPlugin.m */; };
 		761BD99012208C23004B9A39 /* AISFPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 761BD98F12208C23004B9A39 /* AISFPreferences.m */; };
 		761BDA4512209826004B9A39 /* SFPreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 761BDA4412209826004B9A39 /* SFPreferences.xib */; };
 		76F8BB3C122482460020A73A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F8BB3B122482460020A73A /* Cocoa.framework */; };
 		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
 		8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49A704867FD3000E48DA /* InfoPlist.strings */; };
+		DFBD5BEE1D6BD813001341EC /* Adium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD5BED1D6BD813001341EC /* Adium.framework */; };
+		DFBD5BF01D6BD83E001341EC /* AdiumLibpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD5BEF1D6BD83E001341EC /* AdiumLibpurple.framework */; };
+		DFBD5BF21D6BD9F7001341EC /* libglib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD5BF11D6BD9F7001341EC /* libglib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,9 +24,6 @@
 		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
 		76018AB312C3DF6800FC4AF1 /* CBPurpleAccount+AuthBlocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPurpleAccount+AuthBlocker.h"; sourceTree = "<group>"; };
 		76018AB412C3DF6800FC4AF1 /* CBPurpleAccount+AuthBlocker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPurpleAccount+AuthBlocker.m"; sourceTree = "<group>"; };
-		7605D78713CEED3500C0D516 /* Adium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Adium.framework; path = Frameworks/Adium.framework; sourceTree = SOURCE_ROOT; };
-		7605D78813CEED3500C0D516 /* AdiumLibpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdiumLibpurple.framework; path = Frameworks/AdiumLibpurple.framework; sourceTree = SOURCE_ROOT; };
-		7605D91C13CEEEF700C0D516 /* libglib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libglib.framework; path = ../adium3/Frameworks/libglib.framework; sourceTree = SOURCE_ROOT; };
 		761BD63412206D42004B9A39 /* AISFPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISFPlugin.h; sourceTree = "<group>"; };
 		761BD63512206D42004B9A39 /* AISFPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISFPlugin.m; sourceTree = "<group>"; };
 		761BD98E12208C23004B9A39 /* AISFPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISFPreferences.h; sourceTree = "<group>"; };
@@ -35,6 +32,9 @@
 		76F8BB3B122482460020A73A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		8D576316048677EA00EA77CD /* spamfilter.AdiumPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = spamfilter.AdiumPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFBD5BED1D6BD813001341EC /* Adium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Adium.framework; sourceTree = "<group>"; };
+		DFBD5BEF1D6BD83E001341EC /* AdiumLibpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdiumLibpurple.framework; sourceTree = "<group>"; };
+		DFBD5BF11D6BD9F7001341EC /* libglib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libglib.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,10 +43,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */,
+				DFBD5BEE1D6BD813001341EC /* Adium.framework in Frameworks */,
 				76F8BB3C122482460020A73A /* Cocoa.framework in Frameworks */,
-				7605D78913CEED3500C0D516 /* Adium.framework in Frameworks */,
-				7605D78A13CEED3500C0D516 /* AdiumLibpurple.framework in Frameworks */,
-				7605D91D13CEEEF700C0D516 /* libglib.framework in Frameworks */,
+				DFBD5BF01D6BD83E001341EC /* AdiumLibpurple.framework in Frameworks */,
+				DFBD5BF21D6BD9F7001341EC /* libglib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,9 +67,9 @@
 		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				7605D91C13CEEEF700C0D516 /* libglib.framework */,
-				7605D78713CEED3500C0D516 /* Adium.framework */,
-				7605D78813CEED3500C0D516 /* AdiumLibpurple.framework */,
+				DFBD5BF11D6BD9F7001341EC /* libglib.framework */,
+				DFBD5BEF1D6BD83E001341EC /* AdiumLibpurple.framework */,
+				DFBD5BED1D6BD813001341EC /* Adium.framework */,
 				76F8BB3B122482460020A73A /* Cocoa.framework */,
 				0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */,
 			);
