@@ -21,7 +21,7 @@
 
 #import "AISFPreferences.h"
 
-#define KEY_SF_FILTERS @"SF Filters"
+#define KEY_SF_FILTERS @"UF Filters"
 #define PREF_GROUP_SPAMFILTER @"UserFilter Plugin"
 
 #define KEY_SF_PHRASE @"String"
